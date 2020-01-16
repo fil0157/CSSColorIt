@@ -1,0 +1,19 @@
+{
+  "name": "csscolorit",
+  "version": "0.0.1",
+  "description": "",
+  "main": "csscolorit.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fil0157/CSSColorit.git"
+  },
+  "author": "fil0157",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fil0157/CSSColorit/issues"
+  },
+  "homepage": "https://github.com/fil0157/CSSColorit#readme"
+}
