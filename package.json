@@ -12,6 +12,8 @@
     "color"
   ],
   "main": "csscolorit.scss",
+  "scss": "sass/materialize.scss",
+  "style": "dist/css/materialize.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
