@@ -1,0 +1,51 @@
+@import "red";
+@import "deep-orange";
+@import "orange";
+@import "amber";
+@import "yellow";
+@import "pear";
+@import "lime";
+@import "light-green";
+@import "green";
+@import "emerald";
+@import "mint";
+@import "cyan";
+@import "sky";
+@import "light-blue";
+@import "aqua";
+@import "azure";
+@import "blue";
+@import "indigo";
+@import "deep-purple";
+@import "purple";
+@import "light-purple";
+@import "ruby";
+@import "fuchsia";
+@import "pink";
+
+$colors: (
+    "red": $red,
+    "deep-orange": $deep-orange,
+    "orange": $orange,
+    "amber": $amber,
+    "yellow": $yellow,
+    "pear": $pear,
+    "lime": $lime,
+    "light-green": $light-green,
+    "green": $green,
+    "emerald": $emerald,
+    "mint": $mint,
+    "cyan": $cyan,
+    "sky": $sky,
+    "light-blue": $light-blue,
+    "aqua": $aqua,
+    "azure": $azure,
+    "blue": $blue,
+    "indigo": $indigo,
+    "deep-purple": $deep-purple,
+    "purple": $purple,
+    "light-purple": $light-purple,
+    "ruby": $ruby,
+    "fuchsia": $fuchsia,
+    "pink": $pink,
+);

@@ -1,0 +1,142 @@
+$base: (
+    "darken-4": #333300,
+    "darken-3": #666600,
+    "darken-2": #999900,
+    "darken-1": #cccc00,
+    "base": #ffff00,
+    "lighten-1": #ffff33,
+    "lighten-2": #ffff66,
+    "lighten-3": #ffff99,
+    "lighten-4": #ffffcc,
+);
+
+
+$seturation-1: (
+    "darken-4": #303003,
+    "darken-3": #616105,
+    "darken-2": #919108,
+    "darken-1": #c2c20a,
+    "base": #f2f20d,
+    "lighten-1": #f5f53d,
+    "lighten-2": #f7f76e,
+    "lighten-3": #fafa9e,
+    "lighten-4": #fcfccf,
+);
+
+
+$seturation-2: (
+    "darken-4": #2e2e05,
+    "darken-3": #5c5c0a,
+    "darken-2": #8a8a0f,
+    "darken-1": #b8b814,
+    "base": #e6e619,
+    "lighten-1": #ebeb47,
+    "lighten-2": #f0f075,
+    "lighten-3": #f5f5a3,
+    "lighten-4": #fafad1,
+);
+
+
+$seturation-3: (
+    "darken-4": #2b2b08,
+    "darken-3": #57570f,
+    "darken-2": #828217,
+    "darken-1": #adad1f,
+    "base": #d9d926,
+    "lighten-1": #e0e052,
+    "lighten-2": #e8e87d,
+    "lighten-3": #f0f0a8,
+    "lighten-4": #f7f7d4,
+);
+
+
+$seturation-4: (
+    "darken-4": #29290a,
+    "darken-3": #525214,
+    "darken-2": #7a7a1f,
+    "darken-1": #a3a329,
+    "base": #cccc33,
+    "lighten-1": #d6d65c,
+    "lighten-2": #e0e085,
+    "lighten-3": #ebebad,
+    "lighten-4": #f5f5d6,
+);
+
+
+$seturation-5: (
+    "darken-4": #26260d,
+    "darken-3": #4d4d19,
+    "darken-2": #737326,
+    "darken-1": #999933,
+    "base": #bfbf40,
+    "lighten-1": #cccc66,
+    "lighten-2": #d9d98c,
+    "lighten-3": #e6e6b3,
+    "lighten-4": #f2f2d9,
+);
+
+
+$seturation-6: (
+    "darken-4": #24240f,
+    "darken-3": #47471f,
+    "darken-2": #6b6b2e,
+    "darken-1": #8f8f3d,
+    "base": #b3b34d,
+    "lighten-1": #c2c270,
+    "lighten-2": #d1d194,
+    "lighten-3": #e0e0b8,
+    "lighten-4": #f0f0db,
+);
+
+
+$seturation-7: (
+    "darken-4": #212112,
+    "darken-3": #424224,
+    "darken-2": #636336,
+    "darken-1": #858547,
+    "base": #a6a659,
+    "lighten-1": #b8b87a,
+    "lighten-2": #c9c99c,
+    "lighten-3": #dbdbbd,
+    "lighten-4": #ededde,
+);
+
+
+$seturation-8: (
+    "darken-4": #1f1f14,
+    "darken-3": #3d3d29,
+    "darken-2": #5c5c3d,
+    "darken-1": #7a7a52,
+    "base": #999966,
+    "lighten-1": #adad85,
+    "lighten-2": #c2c2a3,
+    "lighten-3": #d6d6c2,
+    "lighten-4": #ebebe0,
+);
+
+
+$seturation-9: (
+    "darken-4": #1c1c17,
+    "darken-3": #38382e,
+    "darken-2": #545445,
+    "darken-1": #70705c,
+    "base": #8c8c73,
+    "lighten-1": #a3a38f,
+    "lighten-2": #babaab,
+    "lighten-3": #d1d1c7,
+    "lighten-4": #e8e8e3,
+);
+
+
+$yellow: (
+    "base": $base,
+    "seturation-1": $seturation-1,
+    "seturation-2": $seturation-2,
+    "seturation-3": $seturation-3,
+    "seturation-4": $seturation-4,
+    "seturation-5": $seturation-5,
+    "seturation-6": $seturation-6,
+    "seturation-7": $seturation-7,
+    "seturation-8": $seturation-8,
+    "seturation-9": $seturation-9,
+);

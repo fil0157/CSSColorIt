@@ -1,0 +1,42 @@
+@each $color_name, $color in $colors {
+    @each $type_name, $type in $color {
+        @each $shade_name, $shade in $type {
+            @if $type_name == "base" {
+                @if $shade_name == "base" {
+                    .#{$color_name} {
+                        background-color: $shade !important;
+                    }
+                    .#{$color_name}-text {
+                        color: $shade !important;
+                    }
+                }
+                @else {
+                    .#{$color_name}.#{$shade_name} {
+                        background-color: $shade !important;
+                    }
+                    .#{$color_name}-text.text-#{$shade_name} {
+                        color: $shade !important;
+                    }
+                }
+            }
+            @else {
+                @if $shade_name == "base" {
+                    .#{$color_name}.#{$type_name} {
+                        background-color: $shade !important;
+                    }
+                    .#{$color_name}-text.text-#{$type_name} {
+                        color: $shade !important;
+                    }
+                }
+                @else {
+                    .#{$color_name}.#{$type_name}.#{$shade_name} {
+                        background-color: $shade !important;
+                    }
+                    .#{$color_name}-text.text-#{$type_name}.text-#{$shade_name} {
+                        color: $shade !important;
+                    }
+                }
+            }
+        }
+    }
+}
