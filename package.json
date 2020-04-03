@@ -12,13 +12,16 @@
     "color"
   ],
   "main": "csscolorit.scss",
-  "scss": "sass/materialize.scss",
-  "style": "dist/css/materialize.css",
+  "scss": "sass/csscolorit.scss",
+  "style": "dist/css/csscolorit.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "scss": "*"
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.13.1",
+    "sass": "^1.26.3",
+    "scss": "^0.2.4"
   },
   "repository": {
     "type": "git",
