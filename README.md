@@ -1,10 +1,17 @@
 # CSSColorIt
 
-> CSSColorit is a library of primary colors
+> CSSColorIt is a library of primary colors
+
+
+## Changelog
+
+For changelogs, check out [the Releases section of CSSColorIt](https://github.com/fil0157/CSSColorIt/releases) or the [CHANGELOG.md](CHANGELOG.md).
+
 
 ## Copyright
 
 Code Copyright 2020 CSSColorIt.
+
 
 ## MIT License
 
