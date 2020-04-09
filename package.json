@@ -1,7 +1,7 @@
 {
   "name": "csscolorit",
   "version": "0.1.0",
-  "description": "CSSColorit is a library of primary colors",
+  "description": "CSSColorIt is a library of primary colors",
   "author": "fil0157",
   "license": "MIT",
   "keywords": [
@@ -25,10 +25,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fil0157/CSSColorit.git"
+    "url": "git+https://github.com/fil0157/CSSColorIt.git"
   },
   "bugs": {
-    "url": "https://github.com/fil0157/CSSColorit/issues"
+    "url": "https://github.com/fil0157/CSSColorIt/issues"
   },
-  "homepage": "https://github.com/fil0157/CSSColorit#readme"
+  "homepage": "https://github.com/fil0157/CSSColorIt#readme"
 }
