@@ -3,6 +3,13 @@
 > CSSColorIt is a library of primary colors
 
 
+## Table of Contents
+
+- [Changelog](#Changelog)
+- [Copyright](#Copyright)
+- [MIT License](#MIT-License)
+
+
 ## Changelog
 
 For changelogs, check out [the Releases section of CSSColorIt](https://github.com/fil0157/CSSColorIt/releases) or the [CHANGELOG.md](CHANGELOG.md).
