@@ -24,6 +24,7 @@
 @import "ruby";
 @import "fuchsia";
 @import "pink";
+@import "tones";
 
 $colors: (
     "red": $red,
@@ -50,4 +51,5 @@ $colors: (
     "ruby": $ruby,
     "fuchsia": $fuchsia,
     "pink": $pink,
+    "tones": $tones,
 );

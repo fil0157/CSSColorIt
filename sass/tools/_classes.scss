@@ -1,41 +1,73 @@
 //** CSSColorIt | MIT License | github.com/fil0157/CSSColorIt **//
 
 @each $color_name, $color in $colors {
-    @each $type_name, $type in $color {
-        @each $shade_name, $shade in $type {
-            @if $type_name == "base" {
-                @if $shade_name == "base" {
-                    .#{$color_name} {
-                        background-color: $shade !important;
-                    }
-                    .#{$color_name}-text {
-                        color: $shade !important;
-                    }
+    @if $color_name == "tones" {
+        @each $type_name, $type in $color {
+            @if $type_name == "white" or $type_name == "black" {
+                .#{$type_name} {
+                    background-color: $type !important;
                 }
-                @else {
-                    .#{$color_name}.#{$shade_name} {
-                        background-color: $shade !important;
-                    }
-                    .#{$color_name}-text.text-#{$shade_name} {
-                        color: $shade !important;
-                    }
+                .text-#{$type_name} {
+                    color: $type !important;
                 }
             }
             @else {
-                @if $shade_name == "base" {
-                    .#{$color_name}.#{$type_name} {
-                        background-color: $shade !important;
+                @if $type_name == "base" {
+                    .grey {
+                        background-color: $type !important;
                     }
-                    .#{$color_name}-text.text-#{$type_name} {
-                        color: $shade !important;
+                    .text-grey {
+                        color: $type !important;
                     }
                 }
                 @else {
-                    .#{$color_name}.#{$type_name}.#{$shade_name} {
-                        background-color: $shade !important;
+                    .grey-#{$type_name} {
+                        background-color: $type !important;
                     }
-                    .#{$color_name}-text.text-#{$type_name}.text-#{$shade_name} {
-                        color: $shade !important;
+                    .text-grey-#{$type_name} {
+                        color: $type !important;
+                    }
+                }
+            }
+        }
+    }
+    @else {
+        @each $type_name, $type in $color {
+            @each $shade_name, $shade in $type {
+                @if $type_name == "base" {
+                    @if $shade_name == "base" {
+                        .#{$color_name} {
+                            background-color: $shade !important;
+                        }
+                        .text-#{$color_name} {
+                            color: $shade !important;
+                        }
+                    }
+                    @else {
+                        .#{$color_name}-#{$shade_name} {
+                            background-color: $shade !important;
+                        }
+                        .text-#{$color_name}-#{$shade_name} {
+                            color: $shade !important;
+                        }
+                    }
+                }
+                @else {
+                    @if $shade_name == "base" {
+                        .#{$color_name}-#{$type_name} {
+                            background-color: $shade !important;
+                        }
+                        .text-#{$color_name}-#{$type_name} {
+                            color: $shade !important;
+                        }
+                    }
+                    @else {
+                        .#{$color_name}-#{$type_name}-#{$shade_name} {
+                            background-color: $shade !important;
+                        }
+                        .text-#{$color_name}-#{$type_name}-#{$shade_name} {
+                            color: $shade !important;
+                        }
                     }
                 }
             }
