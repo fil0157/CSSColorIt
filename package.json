@@ -15,7 +15,7 @@
   "scss": "sass/csscolorit.scss",
   "style": "dist/css/csscolorit.css",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "node-sass -w --output-style compressed sass -o css"
   },
   "dependencies": {},
   "devDependencies": {
