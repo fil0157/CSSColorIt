@@ -1,6 +1,9 @@
 Changelog
 =======
 
+## 0.2.1 (April 13, 2020)
+- Added function colorit()
+
 ## 0.2.0 (April 12, 2020)
 - Tones colors added
 - Updated function generating classes
