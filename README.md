@@ -5,9 +5,16 @@
 
 ## Table of Contents
 
+- [Quickstart](#Quickstart)
 - [Changelog](#Changelog)
 - [Copyright](#Copyright)
 - [MIT License](#MIT-License)
+
+
+## Quickstart
+
+- Clone the repo: `git clone https://github.com/fil0157/CSSColorIt.git`
+- Install with [npm](https://www.npmjs.com): `npm i csscolorit`
 
 
 ## Changelog
