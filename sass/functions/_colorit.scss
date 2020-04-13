@@ -1,0 +1,74 @@
+//** CSSColorIt | MIT License | github.com/fil0157/CSSColorIt **//
+
+  //*************************//
+ //**  @function colorit  **//
+//*************************//
+
+//****************************************************************************//
+//**                                                                        **//
+//**  Function returns HEX color                                            **//
+//**                                                                        **//
+//**  @author fil0157                                                       **//
+//**                                                                        **//
+//**  @access public                                                        **//
+//**                                                                        **//
+//**  @param {string} $color_select - color value                           **//
+//**  @param {string} $type_select ('base') - color type value              **//
+//**  @param {string} $shade_select ('base') - hue value                    **//
+//**                                                                        **//
+//****************************************************************************//
+
+//****************************************************************************//
+//**                                                                        **//
+//**  Usage example                                                         **//
+//**                                                                        **//
+//**  @example scss - SCSS using                                            **//
+//**    .foo {                                                              **//
+//**      color: colorit('red');                                            **//
+//**    }                                                                   **//
+//**                                                                        **//
+//**  @example css - CSS output                                             **//
+//**    .foo {                                                              **//
+//**      color: #ff0000;                                                   **//
+//**    }                                                                   **//
+//**                                                                        **//
+//****************************************************************************//
+
+@function colorit($color_select, $type_select: 'base', $shade_select: 'base') {
+    @if map-has-key($colors, $color_select) {
+        $curr_color: map-get($colors, $color_select);
+        @if map-has-key($curr_color, $type_select) {
+            $curr_type: map-get($curr_color, $type_select);
+            @if map-has-key($curr_type, $shade_select) {
+                $curr_shade: map-get($curr_type, $shade_select);
+                @return #{$curr_shade};
+            }
+        }
+        @else {
+            @if map-has-key($curr_color, 'base') {
+                $curr_type: map-get($curr_color, 'base');
+                @if map-has-key($curr_type, $type_select) {
+                    $curr_shade: map-get($curr_type, $type_select);
+                    @return #{$curr_shade};
+                }
+            }
+        }
+    }
+    @else {
+        $curr_color: map-get($colors, 'tones');
+        @if map-has-key($curr_color, $color_select) {
+            $curr_type: map-get($curr_color, $color_select);
+            @return #{$curr_type};
+        }
+        @else {
+            @if $color_select == 'grey' {
+                @if map-has-key($curr_color, $type_select) {
+                    $curr_tone: map-get($curr_color, $type_select);
+                    @return #{$curr_tone};
+                }
+            }
+        }
+    }
+    @error "Unknown `#{$color_select}` - `#{$type_select}` - `#{$shade_select}` in CSSColorIt.";
+    @return null;
+}
