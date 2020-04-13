@@ -17,7 +17,7 @@ $base: (
 );
 
 
-    $seturation-1: (
+$saturation-1: (
     "darken-4": #031a30,
     "darken-3": #053361,
     "darken-2": #084d91,
@@ -30,7 +30,7 @@ $base: (
 );
 
 
-$seturation-2: (
+$saturation-2: (
     "darken-4": #051a2e,
     "darken-3": #0a335c,
     "darken-2": #0f4d8a,
@@ -43,7 +43,7 @@ $seturation-2: (
 );
 
 
-$seturation-3: (
+$saturation-3: (
     "darken-4": #081a2b,
     "darken-3": #0f3357,
     "darken-2": #174d82,
@@ -56,7 +56,7 @@ $seturation-3: (
 );
 
 
-$seturation-4: (
+$saturation-4: (
     "darken-4": #0a1a29,
     "darken-3": #143352,
     "darken-2": #1f4d7a,
@@ -69,7 +69,7 @@ $seturation-4: (
 );
 
 
-$seturation-5: (
+$saturation-5: (
     "darken-4": #0d1a26,
     "darken-3": #19334d,
     "darken-2": #264d73,
@@ -82,7 +82,7 @@ $seturation-5: (
 );
 
 
-$seturation-6: (
+$saturation-6: (
     "darken-4": #0f1a24,
     "darken-3": #1f3347,
     "darken-2": #2e4d6b,
@@ -95,7 +95,7 @@ $seturation-6: (
 );
 
 
-$seturation-7: (
+$saturation-7: (
     "darken-4": #121a21,
     "darken-3": #243342,
     "darken-2": #364d63,
@@ -108,7 +108,7 @@ $seturation-7: (
 );
 
 
-$seturation-8: (
+$saturation-8: (
     "darken-4": #141a1f,
     "darken-3": #29333d,
     "darken-2": #3d4d5c,
@@ -121,7 +121,7 @@ $seturation-8: (
 );
 
 
-$seturation-9: (
+$saturation-9: (
     "darken-4": #171a1c,
     "darken-3": #2e3338,
     "darken-2": #454d54,
@@ -136,13 +136,13 @@ $seturation-9: (
 
 $aqua: (
     "base": $base,
-    "seturation-1": $seturation-1,
-    "seturation-2": $seturation-2,
-    "seturation-3": $seturation-3,
-    "seturation-4": $seturation-4,
-    "seturation-5": $seturation-5,
-    "seturation-6": $seturation-6,
-    "seturation-7": $seturation-7,
-    "seturation-8": $seturation-8,
-    "seturation-9": $seturation-9,
+    "saturation-1": $saturation-1,
+    "saturation-2": $saturation-2,
+    "saturation-3": $saturation-3,
+    "saturation-4": $saturation-4,
+    "saturation-5": $saturation-5,
+    "saturation-6": $saturation-6,
+    "saturation-7": $saturation-7,
+    "saturation-8": $saturation-8,
+    "saturation-9": $saturation-9,
 );
