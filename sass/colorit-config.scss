@@ -1,0 +1,26 @@
+//** CSSColorIt | MIT License | github.com/fil0157/CSSColorIt **//
+
+  //**********************************//
+ //**  config file for CSSColorIt  **//
+//**********************************//
+
+//****************************************************************************//
+//**                                                                        **//
+//**  @variable {boolean} $enable_classes_generation (true) -               **//
+//**    enable generation of all CSSColorIt classes                         **//
+//**                                                                        **//
+//****************************************************************************//
+
+$enable_classes_generation: true;
+
+//****************************************************************************//
+//**                                                                        **//
+//**  @variable {boolean} $is_background_class_generation (true) -          **//
+//**    creates background classes                                          **//
+//**  @variable {boolean} $is_text_class_generation (true) -                **//
+//**    creates text classes                                                **//
+//**                                                                        **//
+//****************************************************************************//
+
+$is_background_class_generation: true;
+$is_text_class_generation: true;
