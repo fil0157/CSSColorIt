@@ -1,72 +1,116 @@
 //** CSSColorIt | MIT License | github.com/fil0157/CSSColorIt **//
 
-@each $color_name, $color in $colors {
-    @if $color_name == "tones" {
-        @each $type_name, $type in $color {
-            @if $type_name == "white" or $type_name == "black" {
-                .#{$type_name} {
-                    background-color: $type !important;
-                }
-                .text-#{$type_name} {
-                    color: $type !important;
-                }
-            }
-            @else {
-                @if $type_name == "base" {
-                    .grey {
-                        background-color: $type !important;
+  //***********************************//
+ //**  @code generates all classes  **//
+//***********************************//
+
+//****************************************************************************//
+//**                                                                        **//
+//**  Code returns all CSSColorIt color classes                             **//
+//**                                                                        **//
+//**  @author fil0157                                                       **//
+//**                                                                        **//
+//**  @access public                                                        **//
+//**                                                                        **//
+//****************************************************************************//
+
+@if $enable_classes_generation {
+    @each $color_name, $color in $colors {
+        @if $color_name == "tones" {
+            @each $type_name, $type in $color {
+                @if $type_name == "white" or $type_name == "black" {
+                    @if $is_background_class_generation {
+                        .#{$type_name} {
+                            background-color: $type !important;
+                        }   
                     }
-                    .text-grey {
-                        color: $type !important;
+                    @if $is_text_class_generation {
+                        .text-#{$type_name} {
+                            color: $type !important;
+                        }   
                     }
                 }
                 @else {
-                    .grey-#{$type_name} {
-                        background-color: $type !important;
+                    @if $type_name == "base" {
+                        @if $is_background_class_generation {
+                            .grey {
+                                background-color: $type !important;
+                            } 
+                        }
+                        @if $is_text_class_generation {
+                            .text-grey {
+                                color: $type !important;
+                            }
+                        }
                     }
-                    .text-grey-#{$type_name} {
-                        color: $type !important;
+                    @else {
+                        @if $is_background_class_generation {
+                            .grey-#{$type_name} {
+                                background-color: $type !important;
+                            }
+                        }
+                        @if $is_text_class_generation {
+                            .text-grey-#{$type_name} {
+                                color: $type !important;
+                            } 
+                        }
                     }
                 }
             }
         }
-    }
-    @else {
-        @each $type_name, $type in $color {
-            @each $shade_name, $shade in $type {
-                @if $type_name == "base" {
-                    @if $shade_name == "base" {
-                        .#{$color_name} {
-                            background-color: $shade !important;
+        @else {
+            @each $type_name, $type in $color {
+                @each $shade_name, $shade in $type {
+                    @if $type_name == "base" {
+                        @if $shade_name == "base" {
+                            @if $is_background_class_generation {
+                                .#{$color_name} {
+                                    background-color: $shade !important;
+                                }
+                            }
+                            @if $is_text_class_generation {
+                                .text-#{$color_name} {
+                                    color: $shade !important;
+                                }  
+                            }
                         }
-                        .text-#{$color_name} {
-                            color: $shade !important;
-                        }
-                    }
-                    @else {
-                        .#{$color_name}-#{$shade_name} {
-                            background-color: $shade !important;
-                        }
-                        .text-#{$color_name}-#{$shade_name} {
-                            color: $shade !important;
-                        }
-                    }
-                }
-                @else {
-                    @if $shade_name == "base" {
-                        .#{$color_name}-#{$type_name} {
-                            background-color: $shade !important;
-                        }
-                        .text-#{$color_name}-#{$type_name} {
-                            color: $shade !important;
+                        @else {
+                            @if $is_background_class_generation {
+                                .#{$color_name}-#{$shade_name} {
+                                    background-color: $shade !important;
+                                }
+                            }
+                            @if $is_text_class_generation {
+                                .text-#{$color_name}-#{$shade_name} {
+                                    color: $shade !important;
+                                } 
+                            }
                         }
                     }
                     @else {
-                        .#{$color_name}-#{$type_name}-#{$shade_name} {
-                            background-color: $shade !important;
+                        @if $shade_name == "base" {
+                            @if $is_background_class_generation {
+                                .#{$color_name}-#{$type_name} {
+                                    background-color: $shade !important;
+                                }
+                            }
+                            @if $is_text_class_generation {
+                                .text-#{$color_name}-#{$type_name} {
+                                    color: $shade !important;
+                                }
+                            }
                         }
-                        .text-#{$color_name}-#{$type_name}-#{$shade_name} {
-                            color: $shade !important;
+                        @else {
+                            @if $is_background_class_generation {
+                                .#{$color_name}-#{$type_name}-#{$shade_name} {
+                                    background-color: $shade !important;
+                                }
+                            }
+                            @if $is_text_class_generation {
+                                .text-#{$color_name}-#{$type_name}-#{$shade_name} {
+                                    color: $shade !important;
+                                }
+                            }
                         }
                     }
                 }
