@@ -1,6 +1,11 @@
 Changelog
 =======
 
+## 1.0.0 (April 21, 2020)
+- Added file colorit-config.scss
+- Added dependency on configuration file
+- Added ability to generate classes only for background or text
+
 ## 0.2.1 (April 13, 2020)
 - Added function colorit()
 
