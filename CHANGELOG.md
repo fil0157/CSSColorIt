@@ -1,6 +1,11 @@
 Changelog
 =======
 
+## 2.0.0 (May 1, 2020)
+- Added file colorit.scss
+- Removed dependency on configuration file
+- Added it is possible to create your own assembly configuration
+
 ## 1.0.0 (April 21, 2020)
 - Added file colorit-config.scss
 - Added dependency on configuration file
