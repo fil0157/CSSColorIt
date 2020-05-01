@@ -9,8 +9,7 @@
 
 @charset "UTF-8";
 
-@import "colors/allColors";
 
-@import "tools/classes";
+@import 'colorit-config';
 
-@import "functions/colorit";
+@import 'colorit';
