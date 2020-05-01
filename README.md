@@ -2,10 +2,12 @@
 
 > CSSColorIt is a library of primary colors
 
+[![npm version](https://badge.fury.io/js/csscolorit.svg)](https://badge.fury.io/js/csscolorit)
 
 ## Table of Contents
 
 - [Quickstart](#Quickstart)
+- [Documentation](#documentation)
 - [Changelog](#Changelog)
 - [Copyright](#Copyright)
 - [MIT License](#MIT-License)
@@ -15,6 +17,10 @@
 
 - Clone the repo: `git clone https://github.com/fil0157/CSSColorIt.git`
 - Install with [npm](https://www.npmjs.com): `npm i csscolorit`
+
+## Documentation
+
+[The documentation](https://csscolorit.ru/docs) can be found at <https://csscolorit.ru>. 
 
 
 ## Changelog
@@ -29,7 +35,7 @@ Code Copyright 2020 CSSColorIt.
 
 ## MIT License
 
-Copyright (c) 2020 CSSColorit
+Copyright (c) 2020 CSSColorIt
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
