@@ -1,6 +1,10 @@
 Changelog
 =======
 
+## 2.1.0 (May 5, 2020)
+- Added a function that generates only the primary color classes
+- Added a variable to the config that starts thet function
+
 ## 2.0.0 (May 1, 2020)
 - Added file colorit.scss
 - Removed dependency on configuration file
