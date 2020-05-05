@@ -1,0 +1,70 @@
+//** CSSColorIt | MIT License | github.com/fil0157/CSSColorIt **//
+
+  //***************************************//
+ //**  @code generates primary classes  **//
+//***************************************//
+
+//****************************************************************************//
+//**                                                                        **//
+//**  Code returns primary CSSColorIt color classes                         **//
+//**                                                                        **//
+//**  @author fil0157                                                       **//
+//**                                                                        **//
+//**  @access public                                                        **//
+//**                                                                        **//
+//****************************************************************************//
+
+@if $enable_primary_classes_generation and not $enable_classes_generation {
+    @each $color_name, $color in $colors {
+        @if $color_name == "tones" {
+            @each $type_name, $type in $color {
+                @if $type_name == "white" or $type_name == "black" {
+                    @if $is_background_class_generation {
+                        .#{$type_name} {
+                            background-color: $type !important;
+                        }   
+                    }
+                    @if $is_text_class_generation {
+                        .text-#{$type_name} {
+                            color: $type !important;
+                        }   
+                    }
+                }
+                @else {
+                    @if $type_name == "base" {
+                        @if $is_background_class_generation {
+                            .grey {
+                                background-color: $type !important;
+                            } 
+                        }
+                        @if $is_text_class_generation {
+                            .text-grey {
+                                color: $type !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @else {
+            @each $type_name, $type in $color {
+                @each $shade_name, $shade in $type {
+                    @if $type_name == "base" {
+                        @if $shade_name == "base" {
+                            @if $is_background_class_generation {
+                                .#{$color_name} {
+                                    background-color: $shade !important;
+                                }
+                            }
+                            @if $is_text_class_generation {
+                                .text-#{$color_name} {
+                                    color: $shade !important;
+                                }  
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -24,3 +24,12 @@ $enable_classes_generation: true;
 
 $is_background_class_generation: true;
 $is_text_class_generation: true;
+
+//****************************************************************************//
+//**                                                                        **//
+//**  @variable {boolean} $enable_primary_classes_generation (false) -      **//
+//**    enable generation of primary CSSColorIt classes                     **//
+//**                                                                        **//
+//****************************************************************************//
+
+$enable_primary_classes_generation: false;
