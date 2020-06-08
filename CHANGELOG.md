@@ -1,6 +1,9 @@
 Changelog
 =======
 
+## 2.1.1 (June 8, 2020)
+- Updating dependencies
+
 ## 2.1.0 (May 5, 2020)
 - Added a function that generates only the primary color classes
 - Added a variable to the config that starts thet function
