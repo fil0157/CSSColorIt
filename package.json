@@ -7,6 +7,7 @@
   "keywords": [
     "css",
     "scss",
+    "sass",
     "web",
     "labrary",
     "frontend",
@@ -16,8 +17,8 @@
   "scss": "sass/csscolorit.scss",
   "style": "dist/css/csscolorit.css",
   "scripts": {
-    "sass": "node-sass -w --output-style compressed sass -o css",
-    "sass-dev": "node-sass -w --output-style nested sass -o dist"
+    "sass": "node-sass --output-style compressed sass/csscolorit.scss -o css",
+    "sass:dev": "node-sass -w --output-style nested sass -o dist"
   },
   "dependencies": {},
   "devDependencies": {
