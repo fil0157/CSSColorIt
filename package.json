@@ -18,7 +18,7 @@
   "style": "dist/css/csscolorit.css",
   "scripts": {
     "sass": "node-sass --output-style compressed sass/csscolorit.scss -o css",
-    "sass:dev": "node-sass -w --output-style nested sass -o dist"
+    "sass:dev": "node-sass -w --output-style nested sass/csscolorit.scss -o dist"
   },
   "dependencies": {},
   "devDependencies": {
