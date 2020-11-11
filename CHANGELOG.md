@@ -1,6 +1,9 @@
 Changelog
 =======
 
+## 2.2.0 (November 11, 2020)
+- Updating dependencies
+
 ## 2.1.1 (June 8, 2020)
 - Updating dependencies
 
